@@ -1,21 +1,23 @@
 package mouse;
 
+import java.util.Scanner;
+
 public class Mouse {
 
     private int age = 0; //age of mouse in days
     private double weight = 1.0; //mouse weight in grams
-    private double percentageGrowthRate; //increase per day
+    private double percentGrowthRate; //increase per day
     //****************************************************
     //This method assigns the mouse's percent growth rate
 
     public void setPercentageGrowthRate(double percentGrowthRate) {
-        this.percentageGrowthRate = percentGrowthRate;
+        this.percentGrowthRate = percentGrowthRate;
     } // end setPercentGrowthRate
 //**********************************************************
 //This method simulates one day of growth for the mouse. 
 
     public void grow() {
-        this.weight += (.01 * this.percentageGrowthRate * this.weight);
+        this.weight += (.01 * this.percentGrowthRate * this.weight);
         this.age++;
     } //end grow
 //***************************************************************
